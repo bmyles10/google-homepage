@@ -1,0 +1,216 @@
+/*google_home.css*/
+
+html {
+    margin: 0;
+    padding: 0;
+    
+}
+
+ ul {
+    padding: 0;
+   
+    list-style: none;
+}
+ li {
+   display: inline;
+   padding: 8px;
+}
+ a {
+    color:#5f6368;
+    text-decoration: none;
+}
+
+ a:hover {
+    color:#5f6368;
+    text-decoration: underline;
+}
+
+
+
+/*-----Layout-----*/
+
+.grid-container {
+   display: flex;
+   flex-direction: column;
+   font: 13px arial;
+   margin: 0;
+}
+
+.grid-container > div {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.nav-bar {order:1;}
+.center-page{order: 2;}
+.footer{order:3;}
+
+
+/*-------Nav Bar-------*/
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.apps {
+    height: 16px;
+    vertical-align: middle;
+    opacity: 0.6;
+    padding-right: 5px;
+}
+
+.apps:hover {
+     opacity: 1;
+}
+
+
+.sign-in a {
+    border: 1px solid #4285f4;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+
+
+  
+
+/*-----------Center Page --------*/
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 112px;
+    padding-bottom: 20px;
+ }
+
+.search-bar {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 484px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    padding: 5px 8px 0 16px;
+    border-radius: 2px;
+    box-shadow: #5f6368;
+    height: 44px;
+    width: 484px;
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    display: flex;
+    flex: 100%;
+    outline: none;
+    font: 16px arial,sans-serif;
+    line-height: 34px;
+    height: 34px !important;
+}
+
+.search-bar:hover {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+.icon-wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+}
+
+.another-one {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.search-bar span {
+    background: url(http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+    vertical-align: middle;
+}
+
+.form input {
+    height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.form input:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+
+
+
+
+
+
+/*-----------footer--------------*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2f2;
+    border-top:1px solid #e4e4e4;
+}
+
+/*-----leftfooter------*/
+.l-footer {
+   justify-self: flex-start;
+   padding-left: -10px;
+}
+.l-footer a{
+    padding-left: 27px;
+}
+/*-----rightfooter------*/
+.r-footer {
+    justify-self: flex-end;
+    padding-right: -10px;
+}
+
+.r-footer a {
+    padding-right: 27px;
+}
